@@ -19,5 +19,24 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Adicione estilos adicionais conforme necessário */
+}
+
+.olhos {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+}
+
+.antena {
+    width: 5px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 10%;
+    left: 48%;
+    transform: translateX(-50%);
 }
