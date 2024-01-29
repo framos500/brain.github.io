@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.robo-container {
+    position: relative;
+}
+
+.robo {
+    width: 100px;
+    height: 120px;
+    background-color: #3498db;
+    border-radius: 15px 15px 40px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: bounce 1s infinite alternate;
+}
+
+.olho {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+}
+
+.olho.esquerdo {
+    left: 30%;
+}
+
+.olho.direito {
+    left: 50%;
+}
+
+.boca {
+    width: 40px;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.antena {
+    width: 5px;
+    height: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
