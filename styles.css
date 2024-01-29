@@ -4,74 +4,88 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #f8f8f8;
+    background-color: #ecf0f1; /* Cor de fundo */
 }
 
 .robo-container {
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.robo {
-    width: 200px;
-    height: 240px;
-    background-color: #8e44ad;
-    border-radius: 15px 15px 40px 40px;
+.cabeca {
+    width: 120px;
+    height: 120px;
+    background-color: #3498db; /* Azul para a cabeça */
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 20px; /* Espaço entre a cabeça e o corpo */
+}
+
+.olhos {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.olho {
+    width: 30px;
+    height: 30px;
+    background-color: #fff; /* Branco para os olhos */
+    border-radius: 50%;
+}
+
+.antena {
+    width: 8px;
+    height: 40px;
+    background-color: #7f8c8d; /* Cinza para a antena */
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nariz {
+    width: 10px;
+    height: 10px;
+    background-color: #f39c12; /* Amarelo para o nariz */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: bounce 1s infinite alternate;
-}
-
-.olho {
-    width: 40px;
-    height: 40px;
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    top: 25%;
-}
-
-.olho.esquerdo {
-    left: 20%; /* Aumentei a distância entre os olhos */
-}
-
-.olho.direito {
-    left: 50%;
 }
 
 .boca {
-    width: 80px;
-    height: 10px;
-    background-color: #fff;
+    width: 40px;
+    height: 5px;
+    background-color: #fff; /* Branco para a boca */
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 20px; /* Adicionei um espaço entre os olhos e a boca */
 }
 
-.antena {
-    width: 10px;
+.corpo {
+    width: 80px;
     height: 80px;
-    background-color: #7f8c8d; /* Cor cinza */
-    position: absolute;
-    top: 10%;
+    background-color: #e74c3c; /* Vermelho para o corpo */
+    border-radius: 50%;
+    position: relative;
 }
 
-.antena.esquerda {
-    left: 45%; /* Posição ajustada para a esquerda */
-}
-
-.antena.direita {
-    left: 55%; /* Posição ajustada para a direita */
-}
-
+/* Adicionando animação ao corpo */
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
     }
+}
+
+/* Aplicando animação ao corpo */
+.robo-container .corpo {
+    animation: bounce 1s infinite alternate;
 }
