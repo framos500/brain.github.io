@@ -12,9 +12,9 @@ body {
 }
 
 .robo {
-    width: 100px;
-    height: 120px;
-    background-color: #3498db;
+    width: 200px; /* Ajuste o tamanho conforme necessário */
+    height: 240px; /* Ajuste o tamanho conforme necessário */
+    background-color: #8e44ad; /* Cor roxa */
     border-radius: 15px 15px 40px 40px;
     position: absolute;
     top: 50%;
@@ -24,12 +24,12 @@ body {
 }
 
 .olho {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background-color: #fff;
     border-radius: 50%;
     position: absolute;
-    top: 35%;
+    top: 25%;
 }
 
 .olho.esquerdo {
@@ -41,8 +41,8 @@ body {
 }
 
 .boca {
-    width: 40px;
-    height: 5px;
+    width: 80px;
+    height: 10px;
     background-color: #fff;
     position: absolute;
     top: 50%;
@@ -51,11 +51,11 @@ body {
 }
 
 .antena {
-    width: 5px;
-    height: 40px;
+    width: 10px;
+    height: 80px;
     background-color: #fff;
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -65,6 +65,6 @@ body {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-10px);
+        transform: translateY(-20px);
     }
 }
