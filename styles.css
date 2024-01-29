@@ -4,23 +4,23 @@ body {
     justify-content: center;
     height: 100vh;
     margin: 0;
-    background-color: #ecf0f1; /* Cor de fundo */
+    background-color: #ecf0f1;
 }
 
 .robo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    cursor: pointer; /* Cursor de ponteiro para indicar que é clicável */
+    cursor: pointer;
 }
 
 .cabeca {
     width: 120px;
     height: 120px;
-    background-color: #3498db; /* Azul para a cabeça */
+    background-color: #3498db;
     border-radius: 50%;
     position: relative;
-    margin-bottom: 20px; /* Espaço entre a cabeça e o corpo */
+    margin-bottom: 20px;
 }
 
 .olhos {
@@ -34,14 +34,14 @@ body {
 .olho {
     width: 30px;
     height: 30px;
-    background-color: #fff; /* Branco para os olhos */
+    background-color: #fff;
     border-radius: 50%;
 }
 
 .antena {
     width: 8px;
     height: 40px;
-    background-color: #7f8c8d; /* Cinza para a antena */
+    background-color: #7f8c8d;
     position: absolute;
     top: 10%;
     left: 50%;
@@ -51,7 +51,7 @@ body {
 .nariz {
     width: 10px;
     height: 10px;
-    background-color: #f39c12; /* Amarelo para o nariz */
+    background-color: #f39c12;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -61,7 +61,7 @@ body {
 .boca {
     width: 40px;
     height: 5px;
-    background-color: #fff; /* Branco para a boca */
+    background-color: #fff;
     position: absolute;
     top: 60%;
     left: 50%;
@@ -71,12 +71,11 @@ body {
 .corpo {
     width: 80px;
     height: 80px;
-    background-color: #e74c3c; /* Vermelho para o corpo */
+    background-color: #e74c3c;
     border-radius: 50%;
     position: relative;
 }
 
-/* Adicionando animação ao corpo */
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0);
@@ -86,7 +85,6 @@ body {
     }
 }
 
-/* Aplicando animação ao corpo */
 .robo-container .corpo {
     animation: bounce 1s infinite alternate;
 }
