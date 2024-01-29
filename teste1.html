@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rovo Boot - Tela Inicial</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f8f8; /* Cor de fundo opcional */
+        }
+
+        .robo-container {
+            position: relative;
+        }
+
+        .robo {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .olhos {
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            top: 30%;
+            left: 25%;
+        }
+
+        .antena {
+            width: 5px;
+            height: 30px;
+            background-color: #fff;
+            position: absolute;
+            top: 10%;
+            left: 48%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="robo-container">
+        <div class="robo">
+            <!-- Conteúdo do Rovo Boot (pode adicionar olhos, antenas, etc.) -->
+            <div class="olhos"></div>
+            <div class="antena"></div>
+        </div>
+    </div>
+</body>
+</html>
