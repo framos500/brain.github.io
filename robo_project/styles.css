@@ -12,9 +12,9 @@ body {
 }
 
 .robo {
-    width: 200px; /* Ajuste o tamanho conforme necessário */
-    height: 240px; /* Ajuste o tamanho conforme necessário */
-    background-color: #8e44ad; /* Cor roxa */
+    width: 200px;
+    height: 240px;
+    background-color: #8e44ad;
     border-radius: 15px 15px 40px 40px;
     position: absolute;
     top: 50%;
@@ -33,7 +33,7 @@ body {
 }
 
 .olho.esquerdo {
-    left: 30%;
+    left: 20%; /* Aumentei a distância entre os olhos */
 }
 
 .olho.direito {
@@ -53,11 +53,17 @@ body {
 .antena {
     width: 10px;
     height: 80px;
-    background-color: #fff;
+    background-color: #7f8c8d; /* Cor cinza */
     position: absolute;
     top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
+}
+
+.antena.esquerda {
+    left: 45%; /* Posição ajustada para a esquerda */
+}
+
+.antena.direita {
+    left: 55%; /* Posição ajustada para a direita */
 }
 
 @keyframes bounce {
