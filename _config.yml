@@ -1,9 +1,1 @@
-git clone https://github.com/author/example-theme.git
-
 bundle exec jekyll serve
-
----
-layout: _layouts/default
----
-
-
