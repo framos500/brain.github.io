@@ -1,20 +1,70 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Rovo Bot</title>
-</head>
-<body>
-    <div class="robo-container">
-        <div class="robo">
-            <div class="olho esquerdo"></div>
-            <div class="olho direito"></div>
-            <div class="boca"></div>
-            <div class="antena"></div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+.robo-container {
+    position: relative;
+}
+
+.robo {
+    width: 100px;
+    height: 120px;
+    background-color: #3498db;
+    border-radius: 15px 15px 40px 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: bounce 1s infinite alternate;
+}
+
+.olho {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 35%;
+}
+
+.olho.esquerdo {
+    left: 30%;
+}
+
+.olho.direito {
+    left: 50%;
+}
+
+.boca {
+    width: 40px;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.antena {
+    width: 5px;
+    height: 40px;
+    background-color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
