@@ -3,6 +3,7 @@ git clone https://github.com/author/example-theme.git
 bundle exec jekyll serve
 
 ---
-layout: default
+layout: _layouts/default
 ---
+
 
