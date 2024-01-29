@@ -48,6 +48,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
+    margin-top: 20px; /* Adicionei um espaço entre os olhos e a boca */
 }
 
 .antena {
