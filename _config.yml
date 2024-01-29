@@ -1,1 +1,10 @@
 bundle exec jekyll serve
+# _config.yml
+
+# Configurações do Jekyll
+title: Seu Título
+description: Sua Descrição
+
+# Configuração do GitHub Pages
+baseurl: ""  # Defina como uma string vazia para o GitHub Pages
+url: "https://seunome.github.io"  # Substitua "seunome" pelo seu nome de usuário ou nome do repositório
