@@ -17,7 +17,7 @@ body {
 .cabeca {
     width: 120px;
     height: 120px;
-    background-color: #3498db;
+    background-color: #054A59;
     border-radius: 50%;
     position: relative;
     margin-bottom: 20px;
@@ -41,7 +41,7 @@ body {
 .antena {
     width: 8px;
     height: 40px;
-    background-color: #7f8c8d;
+    background-color: #F2B591;
     position: absolute;
     top: 10%;
     left: 50%;
@@ -71,7 +71,7 @@ body {
 .corpo {
     width: 80px;
     height: 80px;
-    background-color: #e74c3c;
+    background-color: #D90479;
     border-radius: 50%;
     position: relative;
 }
@@ -88,3 +88,19 @@ body {
 .robo-container .corpo {
     animation: bounce 1s infinite alternate;
 }
+/* ... (seu CSS existente) ... */
+
+.chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#mensagemInput {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+/* ... (seu CSS existente) ... */
